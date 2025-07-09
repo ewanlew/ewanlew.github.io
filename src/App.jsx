@@ -1,33 +1,40 @@
-import { useState } from 'react'
 import { Routes, Route, Link } from 'react-router-dom';
-import About from './About';
-import './App.css'
+import Projects from './Projects';
+import NotFound from './NotFound';
+import './App.css';
 
 function App() {
-
   return (
     <>
       <div>
-      <nav>
-        <Link to="/">Home</Link> |
-        <Link to="/about"> About</Link>
-      </nav>
+        {location.pathname !== '/' && (
+          <header className="header">
+            <div>
+              <nav>
+                <Link to="/projects">Projects</Link>
+              </nav>
+            </div>
+          </header>
+        )}
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </div>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+      </div>
     </>
-  )
+  );
 }
 
 function Home() {
   return (
-    <div>
+    <div className="home">
       <h1>Home</h1>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
