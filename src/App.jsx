@@ -1,6 +1,8 @@
 import { Routes, Route, Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import Projects from './Projects';
 import NotFound from './NotFound';
+import Background from './Background';
 import './App.css';
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
           <header className="header">
             <div>
               <nav>
+                <Link to="/">Home</Link>
                 <Link to="/projects">Projects</Link>
               </nav>
             </div>
@@ -30,9 +33,14 @@ function App() {
 }
 
 function Home() {
+  useEffect(() => {
+    document.title = 'Ewan Lewis'
+  }, []);
+
   return (
     <div className="home">
-      <h1>Home</h1>
+      <Background/>
+      <h1>ewamnb</h1>
     </div>
   );
 }
