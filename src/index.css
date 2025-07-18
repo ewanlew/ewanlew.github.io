@@ -16,6 +16,15 @@
   --dark-header-a-hover: #ff7e7e;
 }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
 .header {
   background-color: var(--dark-header-background);
   color: white;

@@ -38,9 +38,22 @@ function Home() {
   }, []);
 
   return (
-    <div className="home">
-      <Background/>
-      <h1>ewamnb</h1>
+    <div className="home-container">
+      <Background />
+      <div className="intro-card">
+        <div className="intro-section">
+          <img src="/profile.jpg" alt="Ewan Lewis" />
+          <div className="intro-text">
+            <p>hey! i'm ewan – a software engineer from wales</p>
+          </div>
+        </div>
+
+        <div className="nav-buttons">
+          <Link to="/about">About Me</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
+      </div>
     </div>
   );
 }
