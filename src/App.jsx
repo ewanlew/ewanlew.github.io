@@ -1,4 +1,5 @@
 import { Routes, Route, Link } from 'react-router-dom';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { useEffect } from 'react';
 import Projects from './Projects';
 import NotFound from './NotFound';
@@ -42,16 +43,29 @@ function Home() {
       <Background />
       <div className="intro-card">
         <div className="intro-section">
-          <img src="/profile.jpg" alt="Ewan Lewis" />
+          <img src="/img/profile.jpg" alt="Ewan Lewis" />
           <div className="intro-text">
-            <p>hey! i'm ewan – a software engineer from wales</p>
+            <p><u>ewan lewis</u></p>
+            <p style={{ fontSize: '1.15rem', color: 'var(--main-accent)' }}>software engineer, pokémon enjoyer, hardstuck ascendant</p>
           </div>
         </div>
 
         <div className="nav-buttons">
-          <Link to="/about">About Me</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/about">about me</Link>
+          <Link to="/projects">projects</Link>
+          <Link to="/contact">contact</Link>
+        </div>
+
+        <div className="socials-icons">
+          <a href="https://github.com/ewanlew" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/ewan-lewis-492aa9283/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+          <a href="https://twitter.com/waitihaventmadeatwitteryetpls" target="_blank" rel="noopener noreferrer">
+            <FaTwitter />
+          </a>
         </div>
       </div>
     </div>
