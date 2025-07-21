@@ -20,13 +20,24 @@ function Background() {
       });
     }
 
+    let mouseX = null;
+    let mouseY = null;
+
+    const handleMouseMove = (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
     function draw() {
-      ctx.clearRect(0, 0, width, height);
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+      ctx.fillRect(0, 0, width, height);
       for (let i = 0; i < dots.length; i++) {
         const dot = dots[i];
         ctx.beginPath();
         ctx.arc(dot.x, dot.y, 2, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(172, 172, 172, 1)';
+        ctx.fillStyle = '#acacacff';
         ctx.fill();
 
         dot.x += dot.vx;
@@ -48,6 +59,21 @@ function Background() {
             ctx.lineTo(other.x, other.y);
             ctx.strokeStyle = `rgba(83, 83, 83,${1 - dist / 100})`;
             ctx.stroke();
+          }
+        }
+
+        if (mouseX !== null && mouseY !== null) {
+          const dx = dot.x - mouseX;
+          const dy = dot.y - mouseY;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          const minDist = 50;
+          if (dist < minDist && dist > 0) {
+            const force = (minDist - dist) / minDist; // range from 1 (close) to 0 (far)
+            const angle = Math.atan2(dy, dx);
+
+            dot.vx += Math.cos(angle) * force * 0.005;
+            dot.vy += Math.sin(angle) * force * 0.005;
           }
         }
       }
