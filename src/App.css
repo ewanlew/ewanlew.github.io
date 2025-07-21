@@ -21,14 +21,33 @@
 }
 
 .intro-card {
+  position: relative;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 2rem;
   max-width: 625px;
   width: 100%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(6px);
   box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
 }
+
+.right-to-work {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.flag-icon {
+  width: 20px;
+  height: auto;
+}
+
 
 .intro-section {
   display: flex;

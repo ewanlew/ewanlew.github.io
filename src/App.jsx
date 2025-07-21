@@ -42,6 +42,12 @@ function Home() {
     <div className="home-container">
       <Background />
       <div className="intro-card">
+        <div className="right-to-work">
+          RIGHT TO WORK:
+          <img src="https://flagcdn.com/gb.svg" alt="UK flag" className="flag-icon" /> 
+          <img src="https://flagcdn.com/us.svg" alt="US flag" className="flag-icon" />
+        </div>
+
         <div className="intro-section">
           <img src="/img/profile.jpg" alt="Ewan Lewis" />
           <div className="intro-text">

@@ -26,7 +26,7 @@ function Background() {
         const dot = dots[i];
         ctx.beginPath();
         ctx.arc(dot.x, dot.y, 2, 0, Math.PI * 2);
-        ctx.fillStyle = '#ffffff';
+        ctx.fillStyle = 'rgba(172, 172, 172, 1)';
         ctx.fill();
 
         dot.x += dot.vx;
@@ -46,7 +46,7 @@ function Background() {
             ctx.beginPath();
             ctx.moveTo(dot.x, dot.y);
             ctx.lineTo(other.x, other.y);
-            ctx.strokeStyle = `rgba(255,255,255,${1 - dist / 100})`;
+            ctx.strokeStyle = `rgba(83, 83, 83,${1 - dist / 100})`;
             ctx.stroke();
           }
         }
