@@ -44,7 +44,7 @@ function Home() {
       <div className="intro-card">
         <div className="right-to-work">
           RIGHT TO WORK:
-          <img src="https://flagcdn.com/gb.svg" alt="UK flag" className="flag-icon" /> 
+          <img src="https://flagcdn.com/gb.svg" alt="UK flag" className="flag-icon" />
           <img src="https://flagcdn.com/us.svg" alt="US flag" className="flag-icon" />
         </div>
 
@@ -52,7 +52,9 @@ function Home() {
           <img src="/img/profile.jpg" alt="Ewan Lewis" />
           <div className="intro-text">
             <p><u>ewan lewis</u></p>
-            <p style={{ fontSize: '1.15rem', color: 'var(--main-accent)' }}>software engineer, pokémon enjoyer, hardstuck ascendant</p>
+            <p style={{ fontSize: '1.15rem', color: 'var(--main-accent)' }}>
+              software engineer graduate, pokémon enjoyer, hardstuck ascendant
+            </p>
           </div>
         </div>
 

@@ -57,10 +57,20 @@ function Background() {
 
     draw();
 
-    // Resize handler
     const handleResize = () => {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
+      const newWidth = window.innerWidth;
+      const newHeight = window.innerHeight;
+
+      const xRatio = newWidth / width;
+      const yRatio = newHeight / height;
+
+      dots.forEach(dot => {
+        dot.x *= xRatio;
+        dot.y *= yRatio;
+      });
+
+      width = canvas.width = newWidth;
+      height = canvas.height = newHeight;
     };
     window.addEventListener('resize', handleResize);
 
