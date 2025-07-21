@@ -79,7 +79,7 @@ function Home() {
           <a href="https://www.linkedin.com/in/ewan-lewis-492aa9283/" target="_blank" rel="noopener noreferrer" tabIndex={5}>
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com/waitihaventmadeatwitteryetpls" target="_blank" rel="noopener noreferrer" tabIndex={6}>
+          <a href="https://twitter.com/ewanleww" target="_blank" rel="noopener noreferrer" tabIndex={6}>
             <FaTwitter />
           </a>
         </div>

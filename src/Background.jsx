@@ -11,7 +11,7 @@ function Background() {
 
     const dots = [];
 
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 100; i++) {
       dots.push({
         x: Math.random() * width,
         y: Math.random() * height,
