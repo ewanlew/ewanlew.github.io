@@ -11,17 +11,6 @@ function App() {
   return (
     <>
       <div>
-        {location.pathname !== '/' && (
-          <header className="header">
-            <div>
-              <nav>
-                <Link to="/">Home</Link>
-                <Link to="/projects">Projects</Link>
-              </nav>
-            </div>
-          </header>
-        )}
-
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -40,10 +29,10 @@ function Home() {
   }, []);
 
   return (
-    <div className="home-container">
+    <div className="page-container home">
       <Background />
       <CustomCursor />
-      <div className="intro-card">
+      <div className="page-card home">
         <div className="right-to-work">
           <div className="work-line">
             eligible to work in

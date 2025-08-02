@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import Background from "./Background";
+import CustomCursor from "./CustomCursor";
 
 function NotFound() {
     useEffect(() => {
@@ -6,10 +8,14 @@ function NotFound() {
     }, []);
 
     return (
-        <div className="not-found">
-            <h1>404 - Page Not Found</h1>
-            <p>uh oh - page doesn't exist :(</p>
-            <p><a href="/">Home</a></p>
+        <div className="page-container home">
+            <Background />
+            <CustomCursor />
+            <div className="page-card">
+                <h1>404 - Page Not Found</h1>
+                <p>uh oh - page doesn't exist :(</p>
+                <p><a href="/">Home</a></p>
+            </div>
         </div>
     );
 }
