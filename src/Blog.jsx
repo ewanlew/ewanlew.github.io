@@ -3,6 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import Background from "./Background";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import "./BlogPost.css";
 
 const POSTS_PER_PAGE = 5;
@@ -47,7 +48,7 @@ return (
     <div className="page-container">
         <Background />
         <div className="page-card blog-feed">
-            
+
         <div className="back-arrow">
             <Link to="/">
                 <FaArrowLeft />
@@ -65,7 +66,9 @@ return (
             <hr className="blog-divider" />
 
             <div className="blog-post-content">
-                <ReactMarkdown>{postContents[post.slug] || ""}</ReactMarkdown>
+                <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+                    {postContents[post.slug] || ""}
+                </ReactMarkdown>
             </div>
 
             <hr style={{ margin: "2rem 0", opacity: 0.2 }} />

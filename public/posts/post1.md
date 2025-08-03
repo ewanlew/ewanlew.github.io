@@ -6,6 +6,8 @@ i think it turned out pretty okay, though! it's kinda jank throwing `.md` files 
 
 but i turned 22 today, and have spent most of it doing nothing & playing [abiotic factor](https://store.steampowered.com/app/427410/Abiotic_Factor/) :D
 
-![](https://media.tenor.com/11L_yAcaoLQAAAAM/victory-backintheballs.gif)
+<br/>
 
-please employ me </3
+<img src="https://media.tenor.com/11L_yAcaoLQAAAAM/victory-backintheballs.gif" alt="drawing" width="300" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
+
+<br/>
