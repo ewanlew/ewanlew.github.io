@@ -66,7 +66,15 @@ return (
             <hr className="blog-divider" />
 
             <div className="blog-post-content">
-                <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+                <ReactMarkdown rehypePlugins={[rehypeRaw]}
+                // automatically add target="_blank" to links
+                components={{
+                    a: ({ node, ...props }) => (
+                    <a {...props} target="_blank" rel="noopener noreferrer">
+                        {props.children}
+                    </a>
+                    ),
+                }}>
                     {postContents[post.slug] || ""}
                 </ReactMarkdown>
             </div>

@@ -3,5 +3,10 @@
     "slug": "post1",
     "title": "it's my birthday :D",
     "date": "2025-08-03"
+  },
+  {
+    "slug": "post2",
+    "title": "lil test post",
+    "date": "2025-08-04"
   }
 ]

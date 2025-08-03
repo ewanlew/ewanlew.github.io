@@ -67,14 +67,14 @@
 
 /* Code */
 .blog-post-content code {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(94, 75, 75, 0.4);
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   font-family: monospace;
 }
 
 .blog-post-content pre {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(39, 0, 0, 0.4);
   padding: 1rem;
   border-radius: 8px;
   overflow-x: auto;
@@ -84,6 +84,7 @@
 .blog-post-content a {
   color: var(--main-accent);
   text-decoration: underline;
+  transition: color 0.2s ease;
 }
 
 .blog-post-content a:hover {

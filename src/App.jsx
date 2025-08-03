@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from 'react-router-dom';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaDiscord, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { useEffect } from 'react';
 import Projects from './Projects';
 import NotFound from './NotFound';
@@ -75,6 +75,9 @@ function Home() {
           </a>
           <a href="https://twitter.com/ewanleww" target="_blank" rel="noopener noreferrer" tabIndex={6}>
             <FaTwitter />
+          </a>
+          <a href="https://discordapp.com/users/113345742457864192" target="_blank" rel="noopener noreferrer" tabIndex={7}>
+            <FaDiscord />
           </a>
         </div>
       </div>
