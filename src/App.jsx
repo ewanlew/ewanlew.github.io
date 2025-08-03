@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { useEffect } from 'react';
 import Projects from './Projects';
 import NotFound from './NotFound';
+import Blog from './Blog';
 import CustomCursor from './CustomCursor';
 import Background from './Background';
 import './App.css';
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

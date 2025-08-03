@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaTwitter, FaDiscord } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaDiscord, FaArrowLeft } from 'react-icons/fa';
 import Background from "./Background";
-import CustomCursor from "./CustomCursor";
 
 function Contact() {
     const [currentTime, setCurrentTime] = useState("");
@@ -32,6 +31,13 @@ function Contact() {
         <div className="page-container home">
             <Background />
             <div className="page-card">
+                
+                <div className="back-arrow">
+                    <Link to="/">
+                        <FaArrowLeft />
+                    </Link>
+                </div>
+
                 <h1>contact me!</h1>
                 
                 <div>
@@ -68,10 +74,6 @@ function Contact() {
                 <p style={{ color: "rgba(255, 255, 255, 0.5)", fontSize: "0.9rem" }}>
                     keep in mind, it's currently {currentTime} in my local timezone - please forgive me if i don't get to your message immediately!
                 </p>
-
-                <div className="nav-buttons" style={{ marginTop: "2rem" }}>
-                    <Link to="/" className="nav-button">go home!</Link>
-                </div>
             </div>
         </div>
     );

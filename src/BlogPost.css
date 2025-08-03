@@ -1,0 +1,98 @@
+.blog-post-full {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: rgba(29, 19, 19, 0.432);
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.blog-post-content {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3 {
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-content h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--main-accent);
+  padding-bottom: 0.3rem;
+}
+
+.blog-post-content h1::after {
+  content: none;
+}
+
+.blog-post-content h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.blog-post-content h3 {
+  font-size: 1.2rem;
+}
+
+/* Paragraphs */
+.blog-post-content p {
+  margin: 0.5rem 0;
+}
+
+/* Lists */
+.blog-post-content ul,
+.blog-post-content ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.blog-post-content li {
+  margin: 0.3rem 0;
+}
+
+/* Blockquotes */
+.blog-post-content blockquote {
+  border-left: 3px solid var(--main-accent);
+  padding-left: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+/* Code */
+.blog-post-content code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.blog-post-content pre {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+/* Links */
+.blog-post-content a {
+  color: var(--main-accent);
+  text-decoration: underline;
+}
+
+.blog-post-content a:hover {
+  color: white;
+}
+
+.blog-divider {
+  border: none;
+  border-top: 1px solid var(--main-accent);
+  margin: 1.5rem 0 1rem;
+  opacity: 0.6;
+}

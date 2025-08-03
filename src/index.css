@@ -80,7 +80,6 @@
   overflow: visible;
 }
 
-
 html {
   height: 100%;
   overflow-x: hidden;
@@ -96,18 +95,22 @@ body {
   font-family: 'JetBrains Mono', monospace;
 }
 
-h1 {
-  font-size: 2.4rem;
+.page-card h1 {
+  font-size: 2.2rem;
   margin-bottom: 2.5rem;
 }
 
-h1::after {
+.page-card h1::after {
   content: "";
   display: block;
   width: 75%;
   height: 1px;
   background-color: var(--main-accent);
   margin: 1.75rem auto 0 auto;
+}
+
+.blog-post-content h1::after {
+  content: none;
 }
 
 h2 {
@@ -174,6 +177,22 @@ button:focus-visible {
 
 .list-icon {
   font-size: 1.6em;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.back-arrow a {
+  color: white;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.back-arrow a:hover {
+  color: var(--main-accent);
 }
 
 
