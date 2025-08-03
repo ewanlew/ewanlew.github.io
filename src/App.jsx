@@ -11,6 +11,7 @@ import Contact from './Contact';
 function App() {
   return (
     <>
+    <CustomCursor />
       <div>
         <main>
           <Routes>
@@ -33,7 +34,6 @@ function Home() {
   return (
     <div className="page-container home">
       <Background />
-      <CustomCursor />
       <div className="page-card home">
         <div className="right-to-work">
           <div className="work-line">
@@ -60,6 +60,7 @@ function Home() {
         <div className="nav-buttons">
           <Link to="/about" tabIndex={1} className="nav-button">about me</Link>
           <Link to="/projects" tabIndex={2} className="nav-button">projects</Link>
+          <Link to="/blog" tabIndex={2} className="nav-button">blog</Link>
           <Link to="/contact" tabIndex={3} className="nav-button">contact</Link>
         </div>
 

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Background from "./Background";
-import CustomCursor from "./CustomCursor";
 
 function NotFound() {
     useEffect(() => {
@@ -11,7 +10,6 @@ function NotFound() {
     return (
         <div className="page-container home">
             <Background />
-            <CustomCursor />
             <div className="page-card">
                 
                 <h1>404 - page not found</h1>

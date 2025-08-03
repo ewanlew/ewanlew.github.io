@@ -31,13 +31,12 @@ function Contact() {
     return (
         <div className="page-container home">
             <Background />
-            <CustomCursor />
             <div className="page-card">
-                <h1>contact me! please!</h1>
+                <h1>contact me!</h1>
                 
                 <div>
-                    <p style={{ paddingBottom: "1rem" }}>want to have a chat? it doesn't have to be about work! :D</p>
-                    <p>i love talking to new people, so if you fancy talking about a mutual interest or want to see more of my work, feel free to contact me through any of the means below ↓</p>
+                    <p style={{ paddingBottom: "1rem" }}>want to have a chat? it doesn't have to be about work!</p>
+                    <p>i love talking to new people, so if you fancy talking about a mutual interest or want to see more of my work, feel free to contact me ↓</p>
                 </div>
                 
                 <div className="list">
@@ -67,7 +66,7 @@ function Contact() {
                 </p>
 
                 <p style={{ color: "rgba(255, 255, 255, 0.5)", fontSize: "0.9rem" }}>
-                    keep in mind, it's currently {currentTime} - forgive me if i don't get to your message immediately
+                    keep in mind, it's currently {currentTime} in my local timezone - please forgive me if i don't get to your message immediately!
                 </p>
 
                 <div className="nav-buttons" style={{ marginTop: "2rem" }}>
