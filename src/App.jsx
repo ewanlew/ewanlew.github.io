@@ -6,6 +6,7 @@ import NotFound from './NotFound';
 import CustomCursor from './CustomCursor';
 import Background from './Background';
 import './App.css';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
@@ -25,7 +27,7 @@ function App() {
 
 function Home() {
   useEffect(() => {
-    document.title = 'Ewan Lewis'
+    document.title = 'ewan lewis'
   }, []);
 
   return (
@@ -48,8 +50,8 @@ function Home() {
         <div className="intro-section">
           <img src="/img/profile.jpg" alt="Ewan Lewis" />
           <div className="intro-text">
-            <p><u>ewan lewis</u></p>
-            <p style={{ fontSize: '1.15rem', color: 'var(--main-accent)' }}>
+            <h3><u>ewan lewis</u></h3>
+            <p style={{ color: 'var(--main-accent)' }}>
               software engineering graduate, pokémon enjoyer, hardstuck ascendant
             </p>
           </div>

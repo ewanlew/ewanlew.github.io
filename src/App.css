@@ -12,7 +12,6 @@
   align-items: center;
   justify-content: center;
   min-height: calc(100vh - 1px);
-  font-family: 'JetBrains Mono', monospace;
   position: relative;
   z-index: 1;
   text-align: center;
@@ -61,7 +60,6 @@
 }
 
 .intro-text {
-  font-size: 1.5rem;
   color: white;
   max-width: 400px;
   text-align: left;
@@ -74,5 +72,6 @@
 
 .page-card.home {
   width: auto;
+  align-items: center;
   max-width: 625px;
 }
