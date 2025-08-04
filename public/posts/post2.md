@@ -20,8 +20,10 @@ okay so this is all still very new to me - main point of this is to both make su
 
 `Inline code`
 
-```python
-print("code blocka")
+```
+int i = 1 + 2;
+int j = i * 3;
 ```
 
-> blockquote
+![](/img/blog/first-blog-img.webp)
+> reference of how site looks in it's current state :)

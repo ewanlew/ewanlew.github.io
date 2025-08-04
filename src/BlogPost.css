@@ -1,8 +1,9 @@
 .blog-post-full {
   padding: 1.5rem;
   margin-bottom: 2rem;
-  background-color: rgba(29, 19, 19, 0.432);
+  background-color: rgba(0, 0, 0, 0.116);
   border-radius: 8px;
+  border: rgba(255, 255, 255, 0.226) solid 1px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -56,6 +57,15 @@
   margin: 0.3rem 0;
 }
 
+.blog-post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  border: rgba(255, 255, 255, 0.226) solid 1px;
+}
+
 /* Blockquotes */
 .blog-post-content blockquote {
   border-left: 3px solid var(--main-accent);
@@ -67,14 +77,14 @@
 
 /* Code */
 .blog-post-content code {
-  background: rgba(94, 75, 75, 0.4);
+  background: rgba(92, 66, 66, 0.4);
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   font-family: monospace;
 }
 
 .blog-post-content pre {
-  background: rgba(39, 0, 0, 0.4);
+  background: rgba(48, 22, 22, 0.4);
   padding: 1rem;
   border-radius: 8px;
   overflow-x: auto;

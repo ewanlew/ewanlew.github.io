@@ -1,4 +1,4 @@
-:root {
+ :root {
   font-family: 'JetBrains Mono', monospace;
 
   color-scheme: light dark;
@@ -188,10 +188,11 @@ button:focus-visible {
 .back-arrow a {
   color: white;
   font-size: 1.4rem;
-  transition: color 0.3s ease;
+  transition: transform 0.2s ease, color 0.3s ease;
 }
 
 .back-arrow a:hover {
+  transform: scale(1.2);
   color: var(--main-accent);
 }
 

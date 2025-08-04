@@ -82,11 +82,21 @@ return (
             <hr style={{ margin: "2rem 0", opacity: 0.2 }} />
 
             <p style={{ fontSize: "0.9rem", opacity: 0.7, textAlign: "right" }}>
-                {new Date(post.date).toLocaleDateString("en-US", {
+                {(() => {
+                    const d = new Date(post.date);
+                    const formattedDate = d.toLocaleDateString(undefined, {
                     month: "short",
                     day: "2-digit",
                     year: "numeric"
-                })}
+                    });
+                    
+                    const formattedTime = d.toLocaleTimeString(undefined, {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: false
+                    });
+                    return `${formattedDate} • ${formattedTime}`;
+                })()}
             </p>
 
             </div>
