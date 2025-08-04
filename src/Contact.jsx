@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import ExternalLinkWrapper from "./ExternalLinkWrapper";
 import { FaLinkedin, FaTwitter, FaDiscord, FaArrowLeft } from 'react-icons/fa';
 import Background from "./Background";
 
@@ -50,25 +51,25 @@ function Contact() {
                     <li>
                         <FaLinkedin className="list-icon" />
                         <p>linkedin:</p>
-                        <a href="https://www.linkedin.com/in/ewan-lewis-492aa9283/" target="_blank" rel="noopener noreferrer">
-                        Ewan Lewis</a>
+                        <ExternalLinkWrapper href="https://www.linkedin.com/in/ewan-lewis-492aa9283/" target="_blank" rel="noopener noreferrer">
+                        Ewan Lewis</ExternalLinkWrapper>
                     </li>
                     <li>
                         <FaTwitter className="list-icon" />
                         <p>twitter:</p>
-                        <a href="https://twitter.com/ewanleww" target="_blank" rel="noopener noreferrer">@ewanleww</a>
+                        <ExternalLinkWrapper href="https://twitter.com/ewanleww" target="_blank" rel="noopener noreferrer">@ewanleww</ExternalLinkWrapper>
                         </li>
                     <li>
                         <FaDiscord className="list-icon" />
                         <p>discord:</p>
-                        <a href="https://discordapp.com/users/113345742457864192" target="_blank" rel="noopener noreferrer">@ort</a>
+                        <ExternalLinkWrapper href="https://discordapp.com/users/113345742457864192" target="_blank" rel="noopener noreferrer">@ort</ExternalLinkWrapper>
                     </li>
                 </ul>
                 </div>
 
                 <p>
                     if you fancy sending just a regular email, send it to{" "}
-                    <a href="mailto:ewan.leww@gmail.com">ewan.leww@gmail.com</a>
+                    <ExternalLinkWrapper href="mailto:ewan.leww@gmail.com">ewan.leww@gmail.com</ExternalLinkWrapper>
                 </p>
 
                 <p style={{ color: "rgba(255, 255, 255, 0.5)", fontSize: "0.9rem" }}>

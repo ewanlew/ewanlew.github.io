@@ -11,7 +11,7 @@ function ExternalLinkWrapper({ href, children, ...props }) {
       {...props}
     >
       {children}
-      {isExternal && <FaExternalLinkAlt className="external-icon" />}
+      {<FaExternalLinkAlt className="external-icon" />}
     </a>
   );
 }
