@@ -88,8 +88,8 @@ function About() {
                 </div>
                 <p className="body-text" style={{ paddingTop: "2rem" }}>
                     wanna have a nose at how i use these skills, or what i'm using them for right now? have
-                    a look at my{" "}
-                    <ExternalLinkWrapper href="/projects#skills">projects</ExternalLinkWrapper>
+                    a look {" "}
+                    <ExternalLinkWrapper href="/projects#skills">here!</ExternalLinkWrapper>
                 </p>
 
 
@@ -98,7 +98,7 @@ function About() {
                 <h2 style={{marginBottom: "1.2rem" }}>outside of work!</h2>
                 
                 <p className="body-text">
-                    video games have been a huge part of my life since i was a child. they are what
+                    video games have been a huge part of my life since i was a kid. they are what
                     shaped me as person and what made me want to pursue a career in any kind of
                     software development.
                 </p>
@@ -109,7 +109,7 @@ function About() {
                     </ExternalLinkWrapper> {" "}
                     games. when my dad gifted me a copy of pokémon diamond in christmas of 2008, no one would have made
                     me believe that it would be my entire personality for the following decade and a half. {""}
-                    <span style={{ color: 'rgba(194, 166, 166, 1)' }}>(the icon for the website is a fletchinder)</span>
+                    <span style={{ color: 'rgba(194, 166, 166, 1)' }}>(the icon for this site is a fletchinder)</span>
                 </p>
 
                 <p className="body-text">
@@ -118,7 +118,8 @@ function About() {
                     {" "}
                     <ExternalLinkWrapper href="https://www.artinnaturephotography.com/gallery/sierranevada/all/">
                         sierra nevada
-                    </ExternalLinkWrapper>.
+                    </ExternalLinkWrapper>. in all, i've visited austria, france, germany, with plans to visit hong kong and
+                    japan in late 2026.
                     
                 </p>
 

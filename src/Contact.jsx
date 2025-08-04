@@ -40,19 +40,19 @@ function Contact() {
                 </div>
 
                 <h1>contact me!</h1>
-                
-                <div>
+
+                <div className="body-text">
                     <p style={{ paddingBottom: "1rem" }}>want to have a chat? it doesn't have to be about work!</p>
                     <p>i love talking to new people; if you fancy talking about a mutual interest or want to work on something, feel free to contact me ↓</p>
                 </div>
                 
-                <div className="list">
+                <div className="list body-text">
                 <ul>
                     <li>
                         <FaLinkedin className="list-icon" />
                         <p>linkedin:</p>
                         <ExternalLinkWrapper href="https://www.linkedin.com/in/ewan-lewis-492aa9283/" target="_blank" rel="noopener noreferrer">
-                        Ewan Lewis</ExternalLinkWrapper>
+                        ewan lewis</ExternalLinkWrapper>
                     </li>
                     <li>
                         <FaTwitter className="list-icon" />
@@ -67,7 +67,7 @@ function Contact() {
                 </ul>
                 </div>
 
-                <p>
+                <p className="body-text">
                     if you fancy sending just a regular email, send it to{" "}
                     <ExternalLinkWrapper href="mailto:ewan.leww@gmail.com">ewan.leww@gmail.com</ExternalLinkWrapper>
                 </p>
