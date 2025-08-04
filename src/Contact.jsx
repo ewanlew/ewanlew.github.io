@@ -42,7 +42,7 @@ function Contact() {
                 
                 <div>
                     <p style={{ paddingBottom: "1rem" }}>want to have a chat? it doesn't have to be about work!</p>
-                    <p>i love talking to new people, so if you fancy talking about a mutual interest or want to see more of my work, feel free to contact me ↓</p>
+                    <p>i love talking to new people; if you fancy talking about a mutual interest or want to work on something, feel free to contact me ↓</p>
                 </div>
                 
                 <div className="list">

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
+import ExternalLinkWrapper from "./ExternalLinkWrapper";
 import Background from "./Background";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
@@ -66,17 +67,19 @@ return (
             <hr className="blog-divider" />
 
             <div className="blog-post-content">
-                <ReactMarkdown rehypePlugins={[rehypeRaw]}
-                // automatically add target="_blank" to links
-                components={{
-                    a: ({ node, ...props }) => (
-                    <a {...props} target="_blank" rel="noopener noreferrer">
+            <ReactMarkdown
+            rehypePlugins={[rehypeRaw]}
+            components={{
+                a: ({ node, ...props }) => (
+                    <ExternalLinkWrapper href={props.href}>
                         {props.children}
-                    </a>
-                    ),
-                }}>
-                    {postContents[post.slug] || ""}
-                </ReactMarkdown>
+                    </ExternalLinkWrapper>
+                ),
+                }}
+            >
+            {postContents[post.slug] || ""}
+            </ReactMarkdown>
+
             </div>
 
             <hr style={{ margin: "2rem 0", opacity: 0.2 }} />

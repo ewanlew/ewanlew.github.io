@@ -114,7 +114,7 @@ body {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 0rem;
 }
 
@@ -137,7 +137,12 @@ p + p {
 
 a {
   color: var(--main-accent);
-  font-size: 1.2rem;
+  font-size: 1.2rem;  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: white;
 }
 
 button {
@@ -194,6 +199,18 @@ button:focus-visible {
 .back-arrow a:hover {
   transform: scale(1.2);
   color: var(--main-accent);
+}
+
+.external-icon {
+  font-size: 0.9rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+a:hover .external-icon {
+  opacity: 1;
 }
 
 
