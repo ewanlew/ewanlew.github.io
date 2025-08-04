@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Projects from './Projects';
 import NotFound from './NotFound';
 import Blog from './Blog';
+import About from './About';
 import CustomCursor from './CustomCursor';
 import Background from './Background';
 import './App.css';
@@ -17,6 +18,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
@@ -60,7 +62,7 @@ function Home() {
         </div>
 
         <div className="nav-buttons">
-          <Link to="/about" tabIndex={1} className="nav-button">about me</Link>
+          <Link to="/about" tabIndex={1} className="nav-button">about</Link>
           <Link to="/projects" tabIndex={2} className="nav-button">projects</Link>
           <Link to="/blog" tabIndex={2} className="nav-button">blog</Link>
           <Link to="/contact" tabIndex={3} className="nav-button">contact</Link>
