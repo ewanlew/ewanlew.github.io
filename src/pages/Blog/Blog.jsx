@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
-import ExternalLinkWrapper from "./ExternalLinkWrapper";
-import Background from "./Background";
+import ExternalLinkWrapper from "../../components/ExternalLinkWrapper";
+import Background from "../../components/Background";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
-import "./BlogPost.css";
+import "./Blog.css";
 
 const POSTS_PER_PAGE = 5;
 

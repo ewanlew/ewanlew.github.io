@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import ExternalLinkWrapper from "./ExternalLinkWrapper";
+import ExternalLinkWrapper from "../../components/ExternalLinkWrapper";
 import { FaLinkedin, FaTwitter, FaDiscord, FaArrowLeft } from 'react-icons/fa';
-import Background from "./Background";
+import Background from "../../components/Background";
 
 function Contact() {
     const [currentTime, setCurrentTime] = useState("");

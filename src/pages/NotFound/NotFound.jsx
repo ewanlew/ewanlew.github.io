@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Background from "./Background";
+import Background from "../../components/Background";
 
 function NotFound() {
     useEffect(() => {

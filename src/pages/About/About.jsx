@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaTwitter, FaDiscord, FaGithub, FaArrowLeft } from 'react-icons/fa';
-import Background from "./Background";
-import ExternalLinkWrapper from "./ExternalLinkWrapper";
+import Background from "../../components/Background";
+import ExternalLinkWrapper from "../../components/ExternalLinkWrapper";
 import './About.css';
 
 function About() {
@@ -32,8 +32,8 @@ function About() {
                     i’m a recent graduate from swansea university
                     where i found my passion for <span style={{ color: 'var(--main-accent)' }}>video game development</span>,
                     <span style={{ color: 'var(--main-accent)' }}> website development</span>, and 
-                    <span style={{ color: 'var(--main-accent)' }}> mobile app development</span>! if you fancy seeing what projects
-                    i got up to in my university days (including my undergraduate final project), have a look{" "}
+                    <span style={{ color: 'var(--main-accent)' }}> mobile app development</span>. if you fancy seeing what projects
+                    i got up to in my university days (including my undergraduate final project), have a little look{" "}
                     <ExternalLinkWrapper href="/projects#university-projects">
                         here!
                     </ExternalLinkWrapper>
@@ -87,7 +87,7 @@ function About() {
                     </div>
                 </div>
                 <p className="body-text" style={{ paddingTop: "2rem" }}>
-                    wanna have a nose at how i use these skills, or what i'm using them for right now? have
+                    wanna see how i've used these, or what i'm using them for right now? have
                     a look {" "}
                     <ExternalLinkWrapper href="/projects#skills">here!</ExternalLinkWrapper>
                 </p>
@@ -109,7 +109,7 @@ function About() {
                     </ExternalLinkWrapper> {" "}
                     games. when my dad gifted me a copy of pokémon diamond in christmas of 2008, no one would have made
                     me believe that it would be my entire personality for the following decade and a half. {""}
-                    <span style={{ color: 'rgba(194, 166, 166, 1)' }}>(the icon for this site is a fletchinder)</span>
+                    <span style={{ color: 'rgba(148, 148, 148, 1)' }}>(the icon for this site is a fletchinder)</span>
                 </p>
 
                 <p className="body-text">
