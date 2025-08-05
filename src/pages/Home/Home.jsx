@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaDiscord, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaDiscord, FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { useEffect } from 'react';
 import Background from '../../components/Background';
 import './Home.css';
@@ -43,16 +43,19 @@ function Home() {
         </div>
 
         <div className="socials-icons">
-          <a href="https://github.com/ewanlew" target="_blank" rel="noopener noreferrer" tabIndex={4}>
+          <a href="https://github.com/ewanlew/" target="_blank" rel="noopener noreferrer" tabIndex={4}>
             <FaGithub />
           </a>
           <a href="https://www.linkedin.com/in/ewan-lewis-492aa9283/" target="_blank" rel="noopener noreferrer" tabIndex={5}>
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com/ewanleww" target="_blank" rel="noopener noreferrer" tabIndex={6}>
+          <a href="https://instagram.com/ewan.lew/" target="_blank" rel="noopener noreferrer" tabIndex={6}>
+            <FaInstagram />
+          </a>
+          <a href="https://twitter.com/ewanleww/" target="_blank" rel="noopener noreferrer" tabIndex={7}>
             <FaTwitter />
           </a>
-          <a href="https://discordapp.com/users/113345742457864192" target="_blank" rel="noopener noreferrer" tabIndex={7}>
+          <a href="https://discordapp.com/users/113345742457864192/" target="_blank" rel="noopener noreferrer" tabIndex={8}>
             <FaDiscord />
           </a>
         </div>
