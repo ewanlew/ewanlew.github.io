@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaTwitter, FaDiscord, FaGithub, FaArrowLeft } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaInstagram, FaDiscord, FaGithub, FaArrowLeft } from 'react-icons/fa';
 import Background from "../../components/Background";
 import ExternalLinkWrapper from "../../components/ExternalLinkWrapper";
 import './About.css';
@@ -28,7 +28,7 @@ function About() {
                     my living dex...)
                 </p>
                 
-                <p class="body-text">
+                <p className="body-text">
                     i’m a recent graduate from swansea university
                     where i found my passion for <span style={{ color: 'var(--main-accent)' }}>video game development</span>,
                     <span style={{ color: 'var(--main-accent)' }}> website development</span>, and 
@@ -131,6 +131,9 @@ function About() {
                     </a>
                     <a href="https://www.linkedin.com/in/ewan-lewis-492aa9283/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin />
+                    </a>
+                    <a href="https://instagram.com/ewan.lew/" target="_blank" rel="noopener noreferrer" tabIndex={6}>
+                        <FaInstagram />
                     </a>
                     <a href="https://twitter.com/ewanleww" target="_blank" rel="noopener noreferrer">
                         <FaTwitter />

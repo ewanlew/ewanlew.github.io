@@ -82,8 +82,6 @@
   overflow: visible;
 }
 
-
-
 html {
   height: 100%;
   overflow-x: hidden;
@@ -213,6 +211,7 @@ a:hover .external-icon {
 
   .page-card {
     border-radius: 0;
+    width: 100%;
     padding: 1rem;
     min-height: 100vh;
     box-shadow: none;
@@ -245,6 +244,17 @@ a:hover .external-icon {
   display: flex;
   justify-content: center;
   font-size: 2.2rem;
+}
+
+.back-arrow {
+  position: fixed;
+  top: 3rem;
+  left: 2rem;
+}
+
+.body-text {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 }

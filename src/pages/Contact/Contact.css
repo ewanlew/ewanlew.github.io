@@ -1,0 +1,14 @@
+.time-reminder {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+.time-reminder {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
+}

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ExternalLinkWrapper from "../../components/ExternalLinkWrapper";
 import { FaLinkedin, FaTwitter, FaDiscord, FaArrowLeft } from 'react-icons/fa';
 import Background from "../../components/Background";
+import './Contact.css';
 
 function Contact() {
     const [currentTime, setCurrentTime] = useState("");
@@ -72,7 +73,7 @@ function Contact() {
                     <ExternalLinkWrapper href="mailto:ewan.leww@gmail.com">ewan.leww@gmail.com</ExternalLinkWrapper>
                 </p>
 
-                <p style={{ color: "rgba(255, 255, 255, 0.5)", fontSize: "0.9rem" }}>
+                <p className="time-reminder">
                     keep in mind, it's currently {currentTime} in my local timezone - please forgive me if i don't get to your message immediately!
                 </p>
             </div>

@@ -55,7 +55,7 @@ return (
                 <FaArrowLeft />
             </Link>
         </div>
-        <h1>personal/dev blog :)</h1>
+        <h1>blog :)</h1>
 
         {posts
         .slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE)
