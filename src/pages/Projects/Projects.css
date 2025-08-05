@@ -1,0 +1,115 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.project-card.highlight {
+  position: relative;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: 0;
+  overflow: visible;
+}
+
+.project-card.highlight::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    #F6B4D9,
+    #0A6DF5,
+    #9CD2FF,
+    #7E6AE8,
+    #F6B4D9
+  );
+  padding: 3px; 
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+  animation: rotation 12s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+
+.project-thumb {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    text-align: justify;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  opacity: 0.85;
+}
+
+.project-card.highlight h3,
+.project-card.highlight p,
+.project-card.highlight .skill-badges span {
+  color: white;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-badges span {
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card:hover .skill-badges span {
+  background-color: white;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
