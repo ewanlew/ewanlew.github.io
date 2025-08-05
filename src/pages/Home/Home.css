@@ -75,3 +75,39 @@
   align-items: center;
   max-width: 625px;
 }
+
+@media (max-width: 768px) {
+
+  .right-to-work {
+    margin: 1rem 0;
+  }
+
+  .intro-section {
+    flex-direction: column;
+    padding-top: 20%;
+    gap: 0rem;
+    text-align: center;
+  }
+
+  .intro-section img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .intro-text {
+    max-width: 80%;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .intro-text p {
+    margin-top: 1rem;
+  }
+
+  .page-card.home {
+    padding: 1rem;
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+

@@ -1,13 +1,18 @@
 import { useEffect, useState } from 'react';
 
 function CustomCursor() {
+  const isTouchDevice =
+    typeof window !== 'undefined' &&
+    ('ontouchstart' in window || navigator.maxTouchPoints > 0);
+
   const [isPressed, setIsPressed] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [trailingPos, setTrailingPos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    let animationFrame;
+    if (isTouchDevice) return;
 
+    let animationFrame;
     const animate = () => {
       setTrailingPos(prev => ({
         x: prev.x + (position.x - prev.x) * 0.1,
@@ -15,16 +20,15 @@ function CustomCursor() {
       }));
       animationFrame = requestAnimationFrame(animate);
     };
-
     animate();
+
     return () => cancelAnimationFrame(animationFrame);
-  }, [position]);
+  }, [position, isTouchDevice]);
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-    };
+    if (isTouchDevice) return;
 
+    const handleMouseMove = (e) => setPosition({ x: e.clientX, y: e.clientY });
     const handleMouseDown = () => setIsPressed(true);
     const handleMouseUp = () => setIsPressed(false);
 
@@ -37,7 +41,11 @@ function CustomCursor() {
       window.removeEventListener('mousedown', handleMouseDown);
       window.removeEventListener('mouseup', handleMouseUp);
     };
-  }, []);
+  }, [isTouchDevice]);
+
+  if (isTouchDevice) {
+    return null;
+  }
 
   return (
     <>
@@ -58,7 +66,6 @@ function CustomCursor() {
           zIndex: 9998,
         }}
       />
-
       <div
         style={{
           position: 'fixed',
@@ -75,7 +82,6 @@ function CustomCursor() {
           zIndex: 9999,
         }}
       />
-
       <style>{`* { cursor: none !important; }`}</style>
     </>
   );

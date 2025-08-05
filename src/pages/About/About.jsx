@@ -22,7 +22,7 @@ function About() {
 
                 <h1>about me!</h1>
 
-                <p class="body-text">
+                <p className="body-text">
                     hi! i'm ewan, a software engineer from south wales. i currently live near swansea and
                     spend my free time looking at solutions for problems you didn't know you had. (and filling out
                     my living dex...)
