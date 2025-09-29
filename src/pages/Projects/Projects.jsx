@@ -22,11 +22,12 @@ const tagColors = {
     JS: "#776b13ff",
     CSS: "#2965F1",
     "GitHub Pages": "#181717",
-    "Java": "#b07219ff",
-    "JavaFX": "#b05019ff"
+    Java: "#b07219ff",
+    JavaFX: "#b05019ff",
+    API: "#181717"
 };
 
-// 🗂️ projects
+// projects
 const universityProjects = [
     {
         title: "Final Project",

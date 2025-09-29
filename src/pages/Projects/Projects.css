@@ -110,6 +110,10 @@
   background-color: white;
 }
 
+.project-card.highlight .skill-badges span:hover {
+  color: black;
+}
+
 h2 {
     margin-bottom: 1rem;
 }
