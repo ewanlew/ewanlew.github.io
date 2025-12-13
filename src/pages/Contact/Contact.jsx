@@ -14,7 +14,7 @@ function Contact() {
         const updateTime = () => {
             const now = new Date();
             const options = { 
-                timeZone: "America/Los_Angeles",
+                timeZone: "Europe/London",
                 hour: "numeric", 
                 minute: "2-digit", 
                 hour12: true 

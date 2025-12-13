@@ -21,7 +21,7 @@ function Home() {
           </div>
           <div className="work-line">
             currently in 
-            <img src="https://flagcdn.com/us.svg" alt="US flag" className="flag-icon" style={{marginLeft: '0.2rem', marginRight: '0.2rem'}}/>
+            <img src="https://flagcdn.com/gb.svg" alt="UK flag" className="flag-icon" style={{marginLeft: '0.2rem', marginRight: '0.2rem'}}/>
           </div>
         </div>
 
