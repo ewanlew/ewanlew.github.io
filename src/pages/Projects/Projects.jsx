@@ -17,6 +17,9 @@ const tagColors = {
     AWS: "#b16a00ff",
     Ktor: "#009688",
     React: "#207d97ff",
+    "Next.js": "#181717",
+    TypeScript: "#245f9e",
+    PostgreSQL: "#336791",
     Vite: "#646CFF",
     Docker: "#a764ffff",
     JS: "#776b13ff",
@@ -69,8 +72,16 @@ const universityProjects = [
 
 const personalProjects = [
     {
+        title: "nextque.st",
+        description: "A web app for deciding what to play next. Keep a personal backlog, rank games with friends, and find games you already share on Steam. [2026]",
+        skills: ["Next.js", "React", "TypeScript", "PostgreSQL"],
+        site: "https://nextque.st/",
+        image: "/img/projects/nextquest.webp",
+        imagePosition: "left center",
+    },
+    {
         title: "Portfolio Website",
-        description: "First version of my portfolio website (you are here!). Has landing page, about, projects, blog, and contact pages.",
+        description: "First version of my portfolio website (you are here!). Has landing page, about, projects, and contact pages.",
         skills: ["React", "Vite", "CSS", "JS", "GitHub Pages"],
         repo: "https://github.com/ewanlew/ewanlew.github.io",
         image: "/img/projects/portfolio-v1.webp",
@@ -84,12 +95,19 @@ function Projects() {
 
     const renderProjects = (projects) =>
         projects.map((project, index) => (
-            <div
+            <a
                 key={index}
                 className={`project-card ${project.highlight ? "highlight" : ""}`}
-                onClick={() => window.open(project.repo, "_blank")}
+                href={project.site ?? project.repo}
+                target="_blank"
+                rel="noopener noreferrer"
             >
-                <img src={project.image} alt={project.title} className="project-thumb" />
+                <img
+                    src={project.image}
+                    alt=""
+                    className="project-thumb"
+                    style={project.imagePosition ? { objectPosition: project.imagePosition } : undefined}
+                />
                 <h3>{project.title}</h3>
                 <p className="body-text">{project.description}</p>
                 <div className="skill-badges">
@@ -99,7 +117,7 @@ function Projects() {
                         </span>
                     ))}
                 </div>
-            </div>
+            </a>
         ));
 
     return (
@@ -114,13 +132,13 @@ function Projects() {
 
                 <h1>projects</h1>
 
-                <h2 id="university-projects">university projects</h2>
-                <div className="projects-grid">{renderProjects(universityProjects)}</div>
+                <h2 id="personal-projects">personal projects</h2>
+                <div className="projects-grid">{renderProjects(personalProjects)}</div>
 
                 <hr style={{ margin: "1.5rem 0", opacity: 0.2 }} />
 
-                <h2 id="personal-projects">personal projects</h2>
-                <div className="projects-grid">{renderProjects(personalProjects)}</div>
+                <h2 id="university-projects">university projects</h2>
+                <div className="projects-grid">{renderProjects(universityProjects)}</div>
             </div>
         </div>
     );

@@ -111,10 +111,6 @@ body {
   margin: 1.75rem auto 0 auto;
 }
 
-.blog-post-content h1::after {
-  content: none;
-}
-
 h2 {
   font-size: 1.6rem;
   margin-bottom: 0rem;

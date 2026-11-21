@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaDiscord, FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { useEffect } from 'react';
 import Background from '../../components/Background';
 import './Home.css';
@@ -30,7 +30,7 @@ function Home() {
           <div className="intro-text">
             <h3><u>ewan lewis</u></h3>
             <p style={{ color: 'var(--main-accent)' }}>
-              software engineering graduate, pokémon enjoyer, hardstuck ascendant
+              software engineer, pokémon enjoyer, hardstuck ascendant
             </p>
           </div>
         </div>
@@ -38,7 +38,6 @@ function Home() {
         <div className="nav-buttons">
           <Link to="/about" tabIndex={1} className="nav-button">about</Link>
           <Link to="/projects" tabIndex={2} className="nav-button">projects</Link>
-          <Link to="/blog" tabIndex={2} className="nav-button">blog</Link>
           <Link to="/contact" tabIndex={3} className="nav-button">contact</Link>
         </div>
 
@@ -54,9 +53,6 @@ function Home() {
           </a>
           <a href="https://twitter.com/ewanleww/" target="_blank" rel="noopener noreferrer" tabIndex={7}>
             <FaTwitter />
-          </a>
-          <a href="https://discordapp.com/users/113345742457864192/" target="_blank" rel="noopener noreferrer" tabIndex={8}>
-            <FaDiscord />
           </a>
         </div>
       </div>

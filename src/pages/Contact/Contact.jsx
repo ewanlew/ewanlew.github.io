@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ExternalLinkWrapper from "../../components/ExternalLinkWrapper";
-import { FaLinkedin, FaTwitter, FaDiscord, FaArrowLeft } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaArrowLeft } from 'react-icons/fa';
 import Background from "../../components/Background";
 import './Contact.css';
 
@@ -60,11 +60,6 @@ function Contact() {
                         <p>twitter:</p>
                         <ExternalLinkWrapper href="https://twitter.com/ewanleww" target="_blank" rel="noopener noreferrer">@ewanleww</ExternalLinkWrapper>
                         </li>
-                    <li>
-                        <FaDiscord className="list-icon" />
-                        <p>discord:</p>
-                        <ExternalLinkWrapper href="https://discordapp.com/users/113345742457864192" target="_blank" rel="noopener noreferrer">@ort</ExternalLinkWrapper>
-                    </li>
                 </ul>
                 </div>
 
